@@ -1,0 +1,26 @@
+# GitIgnore for Fraction.less
+
+# Development-only files and folders
+	# Uncomment the lines you wish to ignore. These files are generally
+	# unchanging and only needed on the machine used for optimization and
+	# final testing before production.
+
+# test/
+# temp/
+
+# Editor Files
+
+*.sublime-workspace
+*.sublime-project
+*.chproj
+*.esproj
+
+# Folders
+
+
+
+# Individual Files
+
+scratch.txt
+todo.txt
+workinggrid.less
