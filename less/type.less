@@ -1,13 +1,11 @@
 /*:::: TYPOGRAPHY ::::*/
 
-h1:first-child, h2:first-child, h3:first-child, h4:first-child {
-  margin-top: 0;
-}
+body                { font-size: 75%; line-height: 1.5; /*12/18*/ }
 
 h1, h2, h3, h4, h5, h6 {
   position: relative;
-  font-family: Helvetica, Arial, sans-serif;
-	font-weight: bold;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	font-weight: 700;
 	color: @black;
 	.text-shadow(0, 1px, 1px, @white);
 }
@@ -25,14 +23,16 @@ h1, h2 {
   margin-bottom: 18px;
 }
 
-
+h1:first-child, h2:first-child, h3:first-child, h4:first-child {
+  margin-top: 0;
+}
 
 p, pre, address, li, label {
   font-size: 13px;
   line-height: 18px;
   position: relative;
   top: 5px;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   .text-shadow(0, 1px, 1px, @white);
 }
 
@@ -79,4 +79,8 @@ a:focus, a:hover {
 .secondary p {
   font-size: 14px;
   line-height: 20px;
+}
+
+strong {
+  font-weight: 700;
 }
