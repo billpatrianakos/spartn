@@ -1,0 +1,83 @@
+/*:::: @MIXINS ::::*/
+
+@mixin centered {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@mixin centered-text {
+	text-align: center;
+}
+
+@mixin border-radius($radius: 10px) {
+	-moz-border-radius: $radius;
+	-o-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -khtml-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin box-shadow($arguments...) {
+  -o-box-shadow: $arguments;
+  -moz-box-shadow: $arguments;
+  -ms-box-shadow: $arguments;
+  -khtml-box-shadow: $arguments;
+  -webkit-box-shadow: $arguments;
+  box-shadow: $arguments;
+}
+
+@mixin inset-shadow($arguments...) {
+  -o-box-shadow: $arguments;
+  -moz-box-shadow: $arguments;
+  -ms-box-shadow: $arguments;
+  -khtml-box-shadow: $arguments;
+  -webkit-box-shadow: $arguments;
+  box-shadow: $arguments;
+}
+
+@mixin text-shadow($arguments...) {
+  -o-text-shadow: $arguments;
+  -moz-text-shadow: $arguments;
+  -ms-text-shadow: $arguments;
+  -khtml-text-shadow: $arguments;
+  -webkit-text-shadow: $arguments;
+  text-shadow: $arguments;
+}
+
+@mixin top-borders($radius: 6px) {
+  -moz-border-top-left-radius: $radius;
+  -o-border-top-left-radius: $radius;
+  -ms-border-top-left-radius: $radius;
+  -khtml-border-top-left-radius: $radius;
+  -webkit-border-top-left-radius: $radius;
+  border-top-left-radius: $radius;
+  -moz-border-top-right-radius: $radius;
+  -o-border-top-right-radius: $radius;
+  -ms-border-top-right-radius: $radius;
+  -khtml-border-top-right-radius: $radius;
+  -webkit-border-top-right-radius: $radius;
+  border-top-right-radius: $radius;
+}
+
+@mixin bottom-borders($radius: 6px) {
+  -moz-border-bottom-left-radius: $radius;
+  -o-border-bottom-left-radius: $radius;
+  -ms-border-bottom-left-radius: $radius;
+  -khtml-border-bottom-left-radius: $radius;
+  -webkit-border-bottom-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+  -moz-border-bottom-right-radius: $radius;
+  -o-border-bottom-right-radius: $radius;
+  -ms-border-bottom-right-radius: $radius;
+  -khtml-border-bottom-right-radius: $radius;
+  -webkit-border-bottom-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+}
+
+@mixin transition-ease-in-out($arguments...) {
+  -webkit-transition: $arguments;
+  -moz-transition: $arguments;
+  -o-transition: $arguments;
+  transition: $arguments;
+}

@@ -1,3 +1,4 @@
+@import url("font-awesome.css");
 /**********************************\
  * Fraction.less Main Stylesheet  *
  *                                *
@@ -9,14 +10,7 @@
 /*:::: SITE COLORS ::::*/
 /* BACKGROUND GRADIENT MIXINS */
 /* LESS Mixins */
-/*:::: MIXINS ::::*/
-.centered {
-  margin-left: auto;
-  margin-right: auto;
-}
-.centered-text {
-  text-align: center;
-}
+/*:::: @MIXINS ::::*/
 /* CSS "reset" */
 /******************************************************\
  * Custom Build of 'normalize.css' originally by      *
@@ -37,235 +31,217 @@ header,
 hgroup,
 nav,
 section {
-  display: block;
-}
+  display: block; }
+
 audio,
 canvas,
 video {
   display: inline-block;
   *display: inline;
-  *zoom: 1;
-}
+  *zoom: 1; }
+
 audio:not([controls]) {
-  display: none;
-}
+  display: none; }
+
 [hidden] {
-  display: none;
-}
+  display: none; }
+
 /*:::: BASE ::::*/
 html {
   font-size: 100%;
   overflow-y: scroll;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
+  -ms-text-size-adjust: 100%; }
+
 body {
-  margin: 0;
-}
+  margin: 0; }
+
 body,
 button,
 input,
 select,
 textarea {
-  font-family: sans-serif;
-}
+  font-family: sans-serif; }
+
 /*:::: LINKS ::::*/
 a:focus {
-  outline: thin dotted;
-}
+  outline: thin dotted; }
+
 a:hover,
 a:active {
-  outline: 0;
-}
+  outline: 0; }
+
 /*:::: TYPOGRAPHY ::::*/
 abbr[title] {
-  border-bottom: 1px dotted;
-}
+  border-bottom: 1px dotted; }
+
 b,
 strong {
-  font-weight: bold;
-}
+  font-weight: bold; }
+
 blockquote {
-  margin: 1em 40px;
-}
+  margin: 1em 40px; }
+
 dfn {
-  font-style: italic;
-}
+  font-style: italic; }
+
 mark {
-  background: #ffff00;
-  color: #000000;
-}
+  background: yellow;
+  color: black; }
+
 pre,
 code,
 kbd,
 samp {
   font-family: monospace, serif;
   _font-family: 'courier new', monospace;
-  font-size: 1em;
-}
+  font-size: 1em; }
+
 pre {
   white-space: pre;
   white-space: pre-wrap;
-  word-wrap: break-word;
-}
+  word-wrap: break-word; }
+
 q {
-  quotes: none;
-}
+  quotes: none; }
+
 q:before,
 q:after {
   content: '';
-  content: none;
-}
+  content: none; }
+
 small {
-  font-size: 75%;
-}
+  font-size: 75%; }
+
 sub,
 sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
+
 sup {
-  top: -0.5em;
-}
+  top: -0.5em; }
+
 sub {
-  bottom: -0.25em;
-}
+  bottom: -0.25em; }
+
 /*:::: LISTS ::::*/
 ul,
 ol {
   margin: 1em 0;
-  padding: 0 0 0 40px;
-}
+  padding: 0 0 0 40px; }
+
 dd {
-  margin: 0 0 0 40px;
-}
+  margin: 0 0 0 40px; }
+
 nav ul,
 nav ol {
   list-style: none;
-  list-style-image: none;
-}
+  list-style-image: none; }
+
 /*:::: EMBEDDED CONTENT ::::*/
 img {
   border: 0;
   /* 1 */
-
   -ms-interpolation-mode: bicubic;
-  /* 2 */
+  /* 2 */ }
 
-}
 svg:not(:root) {
-  overflow: hidden;
-}
+  overflow: hidden; }
+
 /*:::: FIGURES ::::*/
 figure {
-  margin: 0;
-}
+  margin: 0; }
+
 /*:::: FORMS ::::*/
 form {
-  margin: 0;
-}
+  margin: 0; }
+
 fieldset {
   border: none;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
+  padding: 0.35em 0.625em 0.75em; }
+
 legend {
   border: 0;
   /* 1 */
-
   *margin-left: -7px;
-  /* 2 */
+  /* 2 */ }
 
-}
 button,
 input,
 select,
 textarea {
   font-size: 100%;
   /* 1 */
-
   margin: 0;
   /* 2 */
-
   vertical-align: baseline;
-  *vertical-align: middle;
   /* 3 */
+  *vertical-align: middle;
+  /* 3 */ }
 
-}
 button,
 input {
   line-height: normal;
-  /* 1 */
+  /* 1 */ }
 
-}
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   cursor: pointer;
   /* 1 */
-
   -webkit-appearance: button;
   /* 2 */
-
   *overflow: visible;
-  /* 3 */
+  /* 3 */ }
 
-}
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
-
   padding: 0;
-  /* 2 */
+  /* 2 */ }
 
-}
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
+  box-sizing: content-box; }
 
-  box-sizing: content-box;
-}
 input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
+  -webkit-appearance: none; }
+
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
-  padding: 0;
-}
+  padding: 0; }
+
 textarea {
   overflow: auto;
   /* 1 */
-
   vertical-align: top;
-  /* 2 */
+  /* 2 */ }
 
-}
 /*:::: TABLES ::::*/
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
+
 /*:::: TEXT SELECTION COLORS ::::*/
-::selection,
-::-moz-selection {
-  background: #ffff9e;
-}
-img::selection,
-img::-moz-selection {
-  background: transparent;
-}
+::selection, ::-moz-selection {
+  background: #ffff9e; }
+
+img::selection, img::-moz-selection {
+  background: transparent; }
+
 body {
-  -webkit-tap-highlight-color: #ffff9e;
-}
+  -webkit-tap-highlight-color: #ffff9e; }
+
 /* Grid Framework */
 /****************************************\
  * Fraction.less Responsive grid 		*
@@ -277,964 +253,210 @@ body {
 /*:::: CONTAINERS ::::*/
 .container {
   padding-left: 20px;
-  padding-right: 20px;
-}
+  padding-right: 20px; }
+
 .row {
   width: 100%;
-  max-width: 1140px;
+  max-width: 960px;
   min-width: 755px;
   margin: 0 auto;
-  overflow: hidden;
-}
+  overflow: hidden; }
+
 /*:::: COLUMNS ::::*/
-.one,
-.two,
-.three,
-.four,
-.five,
-.six,
-.seven,
-.eight,
-.nine,
-.ten,
-.eleven {
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven {
   margin-right: 3.8%;
   float: left;
-  min-height: 1px;
-}
+  min-height: 1px; }
+
 .row .one {
-  width: 4.85%;
-}
+  width: 4.85%; }
+
 .row .two {
-  width: 13.45%;
-}
+  width: 13.45%; }
+
 .row .three {
-  width: 22.05%;
-}
+  width: 22.05%; }
+
 .row .four {
-  width: 30.75%;
-}
+  width: 30.75%; }
+
 .row .five {
-  width: 39.45%;
-}
+  width: 39.45%; }
+
 .row .six {
-  width: 48%;
-}
+  width: 48%; }
+
 .row .seven {
-  width: 56.75%;
-}
+  width: 56.75%; }
+
 .row .eight {
-  width: 65.4%;
-}
+  width: 65.4%; }
+
 .row .nine {
-  width: 74.05%;
-}
+  width: 74.05%; }
+
 .row .ten {
-  width: 82.7%;
-}
+  width: 82.7%; }
+
 .row .eleven {
-  width: 91.35%;
-}
+  width: 91.35%; }
+
 .row .twelve {
   width: 100%;
-  float: left;
-}
+  float: left; }
+
 /*:::: FLOATS ::::*/
 .left {
-  float: left;
-}
+  float: left; }
+
 .right {
-  float: right;
-}
+  float: right; }
+
 /* Last div in a row can't mess up our nice grid */
 .last {
-  margin-right: 0px;
-}
+  margin-right: 0px; }
+
 /*:::: RESPONSIVE IMAGES ::::*/
-img,
-object,
-embed {
-  max-width: 100%;
-}
+img, object, embed {
+  max-width: 100%; }
+
 img {
-  height: auto;
-}
-/* !! MEDIA QUERIES ARE AT THE BOTTOM OF 'style.less' - LEAVE THEM THERE FOR GOOD REASON !! *//* Typography */
+  height: auto; }
+
+/* !! MEDIA QUERIES ARE AT THE BOTTOM OF 'style.less' - LEAVE THEM THERE FOR GOOD REASON !! */
+/* Typography */
 /*:::: TYPOGRAPHY ::::*/
 body {
   font-size: 75%;
   line-height: 1.5;
-  /*12/18*/
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+  /*12/18*/ }
+
+h1, h2, h3, h4, h5, h6 {
   position: relative;
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-weight: 700;
-  color: #272727;
-  -o-text-shadow: 0 1px 1px #f7f7f7;
-  -moz-text-shadow: 0 1px 1px #f7f7f7;
-  -ms-text-shadow: 0 1px 1px #f7f7f7;
-  -khtml-text-shadow: 0 1px 1px #f7f7f7;
-  -webkit-text-shadow: 0 1px 1px #f7f7f7;
-  text-shadow: 0 1px 1px #f7f7f7;
-}
-h1,
-h2,
-h3,
-h4 {
-  margin-top: 18px;
-}
-h3,
-h4,
-h5,
-h6 {
-  line-height: 18px;
-}
-h1,
-h2 {
+  color: #232527;
+  -o-text-shadow: 0, 1px, 1px, white;
+  -moz-text-shadow: 0, 1px, 1px, white;
+  -ms-text-shadow: 0, 1px, 1px, white;
+  -khtml-text-shadow: 0, 1px, 1px, white;
+  -webkit-text-shadow: 0, 1px, 1px, white;
+  text-shadow: 0, 1px, 1px, white; }
+
+h1, h2, h3, h4 {
+  margin-top: 18px; }
+
+h3, h4, h5, h6 {
+  line-height: 18px; }
+
+h1, h2 {
   line-height: 36px;
-  margin-bottom: 18px;
-}
-h1:first-child,
-h2:first-child,
-h3:first-child,
-h4:first-child {
-  margin-top: 0;
-}
-p,
-pre,
-address,
-li,
-label {
+  margin-bottom: 18px; }
+
+h1:first-child, h2:first-child, h3:first-child, h4:first-child {
+  margin-top: 0; }
+
+p, pre, address, li, label {
   font-size: 13px;
   line-height: 18px;
   position: relative;
   top: 5px;
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-  -o-text-shadow: 0 1px 1px #f7f7f7;
-  -moz-text-shadow: 0 1px 1px #f7f7f7;
-  -ms-text-shadow: 0 1px 1px #f7f7f7;
-  -khtml-text-shadow: 0 1px 1px #f7f7f7;
-  -webkit-text-shadow: 0 1px 1px #f7f7f7;
-  text-shadow: 0 1px 1px #f7f7f7;
-}
+  -o-text-shadow: 0, 1px, 1px, white;
+  -moz-text-shadow: 0, 1px, 1px, white;
+  -ms-text-shadow: 0, 1px, 1px, white;
+  -khtml-text-shadow: 0, 1px, 1px, white;
+  -webkit-text-shadow: 0, 1px, 1px, white;
+  text-shadow: 0, 1px, 1px, white; }
+
 h6 {
   font-size: 13px;
-  top: 5px;
-}
+  top: 5px; }
+
 h5 {
   font-size: 15px;
-  top: 4px;
-}
+  top: 4px; }
+
 h4 {
   font-size: 18px;
-  top: 2px;
-}
+  top: 2px; }
+
 h3 {
   font-size: 22px;
-  top: 1px;
-}
+  top: 1px; }
+
 h2 {
   font-size: 28px;
-  top: 8px;
-}
+  top: 8px; }
+
 h1 {
   font-size: 36px;
-  top: 5px;
-}
-a,
-a:visited {
-  color: #f7f7f7;
-  -o-text-shadow: 0 1px 1px #272727;
-  -moz-text-shadow: 0 1px 1px #272727;
-  -ms-text-shadow: 0 1px 1px #272727;
-  -khtml-text-shadow: 0 1px 1px #272727;
-  -webkit-text-shadow: 0 1px 1px #272727;
-  text-shadow: 0 1px 1px #272727;
-}
-a:focus,
-a:hover {
-  color: #272727;
-  -o-text-shadow: 0 1px 1px #272727;
-  -moz-text-shadow: 0 1px 1px #272727;
-  -ms-text-shadow: 0 1px 1px #272727;
-  -khtml-text-shadow: 0 1px 1px #272727;
-  -webkit-text-shadow: 0 1px 1px #272727;
-  text-shadow: 0 1px 1px #272727;
-}
+  top: 5px; }
+
+a, a:visited {
+  color: white;
+  -o-text-shadow: 0, 1px, 1px, #232527;
+  -moz-text-shadow: 0, 1px, 1px, #232527;
+  -ms-text-shadow: 0, 1px, 1px, #232527;
+  -khtml-text-shadow: 0, 1px, 1px, #232527;
+  -webkit-text-shadow: 0, 1px, 1px, #232527;
+  text-shadow: 0, 1px, 1px, #232527; }
+
+a:focus, a:hover {
+  color: #232527;
+  -o-text-shadow: 0, 1px, 1px, #232527;
+  -moz-text-shadow: 0, 1px, 1px, #232527;
+  -ms-text-shadow: 0, 1px, 1px, #232527;
+  -khtml-text-shadow: 0, 1px, 1px, #232527;
+  -webkit-text-shadow: 0, 1px, 1px, #232527;
+  text-shadow: 0, 1px, 1px, #232527; }
+
 .secondary p {
   font-size: 14px;
-  line-height: 20px;
-}
+  line-height: 20px; }
+
 strong {
-  font-weight: 700;
-}
-/*  Font Awesome
-    the iconic font designed for use with Twitter Bootstrap
-    -------------------------------------------------------
-    The full suite of pictographic icons, examples, and documentation
-    can be found at: http://fortawesome.github.com/Font-Awesome/
+  font-weight: 700; }
 
-    License
-    -------------------------------------------------------
-    The Font Awesome webfont, CSS, and LESS files are licensed under CC BY 3.0:
-    http://creativecommons.org/licenses/by/3.0/ A mention of
-    'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable
-    source code is considered acceptable attribution (most common on the web).
-    If human readable source code is not available to the end user, a mention in
-    an 'About' or 'Credits' screen is considered acceptable (most common in desktop
-    or mobile software).
-
-    Contact
-    -------------------------------------------------------
-    Email: dave@davegandy.com
-    Twitter: http://twitter.com/fortaweso_me
-    Work: Lead Product Designer @ http://kyruus.com
-
-    */
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('../font/fontawesome-webfont.eot');
-  src: url('../font/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../font/fontawesome-webfont.woff') format('woff'), url('../font/fontawesome-webfont.ttf') format('truetype'), url('../font/fontawesome-webfont.svg#FontAwesome') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-/*  Font Awesome styles
-    ------------------------------------------------------- */
-[class^="icon-"]:before,
-[class*=" icon-"]:before {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  display: inline-block;
-  text-decoration: inherit;
-}
-a [class^="icon-"],
-a [class*=" icon-"] {
-  display: inline-block;
-  text-decoration: inherit;
-}
-/* makes the font 33% larger relative to the icon container */
-.icon-large:before {
-  vertical-align: middle;
-  font-size: 1.3333333333333333em;
-}
-.btn [class^="icon-"],
-.nav-tabs [class^="icon-"],
-.btn [class*=" icon-"],
-.nav-tabs [class*=" icon-"] {
-  /* keeps button heights with and without icons the same */
-
-  line-height: .9em;
-}
-li [class^="icon-"],
-li [class*=" icon-"] {
-  display: inline-block;
-  width: 1.25em;
-  text-align: center;
-}
-li .icon-large:before,
-li .icon-large:before {
-  /* 1.5 increased font size for icon-large * 1.25 width */
-
-  width: 1.875em;
-}
-ul.icons {
-  list-style-type: none;
-  margin-left: 2em;
-  text-indent: -0.8em;
-}
-ul.icons li [class^="icon-"],
-ul.icons li [class*=" icon-"] {
-  width: .8em;
-}
-ul.icons li .icon-large:before,
-ul.icons li .icon-large:before {
-  /* 1.5 increased font size for icon-large * 1.25 width */
-
-  vertical-align: initial;
-}
-/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
-    readers do not read off random characters that represent icons */
-.icon-glass:before {
-  content: "\f000";
-}
-.icon-music:before {
-  content: "\f001";
-}
-.icon-search:before {
-  content: "\f002";
-}
-.icon-envelope:before {
-  content: "\f003";
-}
-.icon-heart:before {
-  content: "\f004";
-}
-.icon-star:before {
-  content: "\f005";
-}
-.icon-star-empty:before {
-  content: "\f006";
-}
-.icon-user:before {
-  content: "\f007";
-}
-.icon-film:before {
-  content: "\f008";
-}
-.icon-th-large:before {
-  content: "\f009";
-}
-.icon-th:before {
-  content: "\f00a";
-}
-.icon-th-list:before {
-  content: "\f00b";
-}
-.icon-ok:before {
-  content: "\f00c";
-}
-.icon-remove:before {
-  content: "\f00d";
-}
-.icon-zoom-in:before {
-  content: "\f00e";
-}
-.icon-zoom-out:before {
-  content: "\f010";
-}
-.icon-off:before {
-  content: "\f011";
-}
-.icon-signal:before {
-  content: "\f012";
-}
-.icon-cog:before {
-  content: "\f013";
-}
-.icon-trash:before {
-  content: "\f014";
-}
-.icon-home:before {
-  content: "\f015";
-}
-.icon-file:before {
-  content: "\f016";
-}
-.icon-time:before {
-  content: "\f017";
-}
-.icon-road:before {
-  content: "\f018";
-}
-.icon-download-alt:before {
-  content: "\f019";
-}
-.icon-download:before {
-  content: "\f01a";
-}
-.icon-upload:before {
-  content: "\f01b";
-}
-.icon-inbox:before {
-  content: "\f01c";
-}
-.icon-play-circle:before {
-  content: "\f01d";
-}
-.icon-repeat:before {
-  content: "\f01e";
-}
-/* \f020 doesn't work in Safari. all shifted one down */
-.icon-refresh:before {
-  content: "\f021";
-}
-.icon-list-alt:before {
-  content: "\f022";
-}
-.icon-lock:before {
-  content: "\f023";
-}
-.icon-flag:before {
-  content: "\f024";
-}
-.icon-headphones:before {
-  content: "\f025";
-}
-.icon-volume-off:before {
-  content: "\f026";
-}
-.icon-volume-down:before {
-  content: "\f027";
-}
-.icon-volume-up:before {
-  content: "\f028";
-}
-.icon-qrcode:before {
-  content: "\f029";
-}
-.icon-barcode:before {
-  content: "\f02a";
-}
-.icon-tag:before {
-  content: "\f02b";
-}
-.icon-tags:before {
-  content: "\f02c";
-}
-.icon-book:before {
-  content: "\f02d";
-}
-.icon-bookmark:before {
-  content: "\f02e";
-}
-.icon-print:before {
-  content: "\f02f";
-}
-.icon-camera:before {
-  content: "\f030";
-}
-.icon-font:before {
-  content: "\f031";
-}
-.icon-bold:before {
-  content: "\f032";
-}
-.icon-italic:before {
-  content: "\f033";
-}
-.icon-text-height:before {
-  content: "\f034";
-}
-.icon-text-width:before {
-  content: "\f035";
-}
-.icon-align-left:before {
-  content: "\f036";
-}
-.icon-align-center:before {
-  content: "\f037";
-}
-.icon-align-right:before {
-  content: "\f038";
-}
-.icon-align-justify:before {
-  content: "\f039";
-}
-.icon-list:before {
-  content: "\f03a";
-}
-.icon-indent-left:before {
-  content: "\f03b";
-}
-.icon-indent-right:before {
-  content: "\f03c";
-}
-.icon-facetime-video:before {
-  content: "\f03d";
-}
-.icon-picture:before {
-  content: "\f03e";
-}
-.icon-pencil:before {
-  content: "\f040";
-}
-.icon-map-marker:before {
-  content: "\f041";
-}
-.icon-adjust:before {
-  content: "\f042";
-}
-.icon-tint:before {
-  content: "\f043";
-}
-.icon-edit:before {
-  content: "\f044";
-}
-.icon-share:before {
-  content: "\f045";
-}
-.icon-check:before {
-  content: "\f046";
-}
-.icon-move:before {
-  content: "\f047";
-}
-.icon-step-backward:before {
-  content: "\f048";
-}
-.icon-fast-backward:before {
-  content: "\f049";
-}
-.icon-backward:before {
-  content: "\f04a";
-}
-.icon-play:before {
-  content: "\f04b";
-}
-.icon-pause:before {
-  content: "\f04c";
-}
-.icon-stop:before {
-  content: "\f04d";
-}
-.icon-forward:before {
-  content: "\f04e";
-}
-.icon-fast-forward:before {
-  content: "\f050";
-}
-.icon-step-forward:before {
-  content: "\f051";
-}
-.icon-eject:before {
-  content: "\f052";
-}
-.icon-chevron-left:before {
-  content: "\f053";
-}
-.icon-chevron-right:before {
-  content: "\f054";
-}
-.icon-plus-sign:before {
-  content: "\f055";
-}
-.icon-minus-sign:before {
-  content: "\f056";
-}
-.icon-remove-sign:before {
-  content: "\f057";
-}
-.icon-ok-sign:before {
-  content: "\f058";
-}
-.icon-question-sign:before {
-  content: "\f059";
-}
-.icon-info-sign:before {
-  content: "\f05a";
-}
-.icon-screenshot:before {
-  content: "\f05b";
-}
-.icon-remove-circle:before {
-  content: "\f05c";
-}
-.icon-ok-circle:before {
-  content: "\f05d";
-}
-.icon-ban-circle:before {
-  content: "\f05e";
-}
-.icon-arrow-left:before {
-  content: "\f060";
-}
-.icon-arrow-right:before {
-  content: "\f061";
-}
-.icon-arrow-up:before {
-  content: "\f062";
-}
-.icon-arrow-down:before {
-  content: "\f063";
-}
-.icon-share-alt:before {
-  content: "\f064";
-}
-.icon-resize-full:before {
-  content: "\f065";
-}
-.icon-resize-small:before {
-  content: "\f066";
-}
-.icon-plus:before {
-  content: "\f067";
-}
-.icon-minus:before {
-  content: "\f068";
-}
-.icon-asterisk:before {
-  content: "\f069";
-}
-.icon-exclamation-sign:before {
-  content: "\f06a";
-}
-.icon-gift:before {
-  content: "\f06b";
-}
-.icon-leaf:before {
-  content: "\f06c";
-}
-.icon-fire:before {
-  content: "\f06d";
-}
-.icon-eye-open:before {
-  content: "\f06e";
-}
-.icon-eye-close:before {
-  content: "\f070";
-}
-.icon-warning-sign:before {
-  content: "\f071";
-}
-.icon-plane:before {
-  content: "\f072";
-}
-.icon-calendar:before {
-  content: "\f073";
-}
-.icon-random:before {
-  content: "\f074";
-}
-.icon-comment:before {
-  content: "\f075";
-}
-.icon-magnet:before {
-  content: "\f076";
-}
-.icon-chevron-up:before {
-  content: "\f077";
-}
-.icon-chevron-down:before {
-  content: "\f078";
-}
-.icon-retweet:before {
-  content: "\f079";
-}
-.icon-shopping-cart:before {
-  content: "\f07a";
-}
-.icon-folder-close:before {
-  content: "\f07b";
-}
-.icon-folder-open:before {
-  content: "\f07c";
-}
-.icon-resize-vertical:before {
-  content: "\f07d";
-}
-.icon-resize-horizontal:before {
-  content: "\f07e";
-}
-.icon-bar-chart:before {
-  content: "\f080";
-}
-.icon-twitter-sign:before {
-  content: "\f081";
-}
-.icon-facebook-sign:before {
-  content: "\f082";
-}
-.icon-camera-retro:before {
-  content: "\f083";
-}
-.icon-key:before {
-  content: "\f084";
-}
-.icon-cogs:before {
-  content: "\f085";
-}
-.icon-comments:before {
-  content: "\f086";
-}
-.icon-thumbs-up:before {
-  content: "\f087";
-}
-.icon-thumbs-down:before {
-  content: "\f088";
-}
-.icon-star-half:before {
-  content: "\f089";
-}
-.icon-heart-empty:before {
-  content: "\f08a";
-}
-.icon-signout:before {
-  content: "\f08b";
-}
-.icon-linkedin-sign:before {
-  content: "\f08c";
-}
-.icon-pushpin:before {
-  content: "\f08d";
-}
-.icon-external-link:before {
-  content: "\f08e";
-}
-.icon-signin:before {
-  content: "\f090";
-}
-.icon-trophy:before {
-  content: "\f091";
-}
-.icon-github-sign:before {
-  content: "\f092";
-}
-.icon-upload-alt:before {
-  content: "\f093";
-}
-.icon-lemon:before {
-  content: "\f094";
-}
-.icon-phone:before {
-  content: "\f095";
-}
-.icon-check-empty:before {
-  content: "\f096";
-}
-.icon-bookmark-empty:before {
-  content: "\f097";
-}
-.icon-phone-sign:before {
-  content: "\f098";
-}
-.icon-twitter:before {
-  content: "\f099";
-}
-.icon-facebook:before {
-  content: "\f09a";
-}
-.icon-github:before {
-  content: "\f09b";
-}
-.icon-unlock:before {
-  content: "\f09c";
-}
-.icon-credit-card:before {
-  content: "\f09d";
-}
-.icon-rss:before {
-  content: "\f09e";
-}
-.icon-hdd:before {
-  content: "\f0a0";
-}
-.icon-bullhorn:before {
-  content: "\f0a1";
-}
-.icon-bell:before {
-  content: "\f0a2";
-}
-.icon-certificate:before {
-  content: "\f0a3";
-}
-.icon-hand-right:before {
-  content: "\f0a4";
-}
-.icon-hand-left:before {
-  content: "\f0a5";
-}
-.icon-hand-up:before {
-  content: "\f0a6";
-}
-.icon-hand-down:before {
-  content: "\f0a7";
-}
-.icon-circle-arrow-left:before {
-  content: "\f0a8";
-}
-.icon-circle-arrow-right:before {
-  content: "\f0a9";
-}
-.icon-circle-arrow-up:before {
-  content: "\f0aa";
-}
-.icon-circle-arrow-down:before {
-  content: "\f0ab";
-}
-.icon-globe:before {
-  content: "\f0ac";
-}
-.icon-wrench:before {
-  content: "\f0ad";
-}
-.icon-tasks:before {
-  content: "\f0ae";
-}
-.icon-filter:before {
-  content: "\f0b0";
-}
-.icon-briefcase:before {
-  content: "\f0b1";
-}
-.icon-fullscreen:before {
-  content: "\f0b2";
-}
-.icon-group:before {
-  content: "\f0c0";
-}
-.icon-link:before {
-  content: "\f0c1";
-}
-.icon-cloud:before {
-  content: "\f0c2";
-}
-.icon-beaker:before {
-  content: "\f0c3";
-}
-.icon-cut:before {
-  content: "\f0c4";
-}
-.icon-copy:before {
-  content: "\f0c5";
-}
-.icon-paper-clip:before {
-  content: "\f0c6";
-}
-.icon-save:before {
-  content: "\f0c7";
-}
-.icon-sign-blank:before {
-  content: "\f0c8";
-}
-.icon-reorder:before {
-  content: "\f0c9";
-}
-.icon-list-ul:before {
-  content: "\f0ca";
-}
-.icon-list-ol:before {
-  content: "\f0cb";
-}
-.icon-strikethrough:before {
-  content: "\f0cc";
-}
-.icon-underline:before {
-  content: "\f0cd";
-}
-.icon-table:before {
-  content: "\f0ce";
-}
-.icon-magic:before {
-  content: "\f0d0";
-}
-.icon-truck:before {
-  content: "\f0d1";
-}
-.icon-pinterest:before {
-  content: "\f0d2";
-}
-.icon-pinterest-sign:before {
-  content: "\f0d3";
-}
-.icon-google-plus-sign:before {
-  content: "\f0d4";
-}
-.icon-google-plus:before {
-  content: "\f0d5";
-}
-.icon-money:before {
-  content: "\f0d6";
-}
-.icon-caret-down:before {
-  content: "\f0d7";
-}
-.icon-caret-up:before {
-  content: "\f0d8";
-}
-.icon-caret-left:before {
-  content: "\f0d9";
-}
-.icon-caret-right:before {
-  content: "\f0da";
-}
-.icon-columns:before {
-  content: "\f0db";
-}
-.icon-sort:before {
-  content: "\f0dc";
-}
-.icon-sort-down:before {
-  content: "\f0dd";
-}
-.icon-sort-up:before {
-  content: "\f0de";
-}
-.icon-envelope-alt:before {
-  content: "\f0e0";
-}
-.icon-linkedin:before {
-  content: "\f0e1";
-}
-.icon-undo:before {
-  content: "\f0e2";
-}
-.icon-legal:before {
-  content: "\f0e3";
-}
-.icon-dashboard:before {
-  content: "\f0e4";
-}
-.icon-comment-alt:before {
-  content: "\f0e5";
-}
-.icon-comments-alt:before {
-  content: "\f0e6";
-}
-.icon-bolt:before {
-  content: "\f0e7";
-}
-.icon-sitemap:before {
-  content: "\f0e8";
-}
-.icon-umbrella:before {
-  content: "\f0e9";
-}
-.icon-paste:before {
-  content: "\f0ea";
-}
-.icon-user-md:before {
-  content: "\f200";
-}
 /*:::: BUTTONS ::::*/
 /* For styling links as buttons */
-.link-button,
-.link-button:visited {
+.link-button, .link-button:visited {
   padding: 6px 10px;
-  color: #272727;
+  color: #232527;
   -moz-border-radius: 6px;
   -o-border-radius: 6px;
   -ms-border-radius: 6px;
   -khtml-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
-  -o-box-shadow: inset 0 1px 0 #f7f7f7;
-  -moz-box-shadow: inset 0 1px 0 #f7f7f7;
-  -ms-box-shadow: inset 0 1px 0 #f7f7f7;
-  -khtml-box-shadow: inset 0 1px 0 #f7f7f7;
-  -webkit-box-shadow: inset 0 1px 0 #f7f7f7;
-  box-shadow: inset 0 1px 0 #f7f7f7;
+  -o-box-shadow: inset, 0, 1px, 0, white;
+  -moz-box-shadow: inset, 0, 1px, 0, white;
+  -ms-box-shadow: inset, 0, 1px, 0, white;
+  -khtml-box-shadow: inset, 0, 1px, 0, white;
+  -webkit-box-shadow: inset, 0, 1px, 0, white;
+  box-shadow: inset, 0, 1px, 0, white;
   /* Gives your button a "shiny"/"candy" effect */
-
-  -o-text-shadow: 0 -1px 1px #272727;
-  -moz-text-shadow: 0 -1px 1px #272727;
-  -ms-text-shadow: 0 -1px 1px #272727;
-  -khtml-text-shadow: 0 -1px 1px #272727;
-  -webkit-text-shadow: 0 -1px 1px #272727;
-  text-shadow: 0 -1px 1px #272727;
-  border: 1px solid #272727;
+  -o-text-shadow: 0, -1px, 1px, #232527;
+  -moz-text-shadow: 0, -1px, 1px, #232527;
+  -ms-text-shadow: 0, -1px, 1px, #232527;
+  -khtml-text-shadow: 0, -1px, 1px, #232527;
+  -webkit-text-shadow: 0, -1px, 1px, #232527;
+  text-shadow: 0, -1px, 1px, #232527;
+  border: 1px solid #232527;
   /* Color should be set to the darkest shade of your button gradient for best effect */
+  white-space: nowrap; }
 
-  white-space: nowrap;
-}
 .link-button:hover {
-  color: #f7f7f7;
-  -o-box-shadow: inset 0 1px 0 #f7f7f7;
-  -moz-box-shadow: inset 0 1px 0 #f7f7f7;
-  -ms-box-shadow: inset 0 1px 0 #f7f7f7;
-  -khtml-box-shadow: inset 0 1px 0 #f7f7f7;
-  -webkit-box-shadow: inset 0 1px 0 #f7f7f7;
-  box-shadow: inset 0 1px 0 #f7f7f7;
+  color: white;
+  -o-box-shadow: inset, 0, 1px, 0, white;
+  -moz-box-shadow: inset, 0, 1px, 0, white;
+  -ms-box-shadow: inset, 0, 1px, 0, white;
+  -khtml-box-shadow: inset, 0, 1px, 0, white;
+  -webkit-box-shadow: inset, 0, 1px, 0, white;
+  box-shadow: inset, 0, 1px, 0, white;
   /* Same rules apply as above for appearance of hovered buttons */
+  border: 1px solid #232527; }
 
-  border: 1px solid #272727;
-}
 /*:::: FORMS ::::*/
 /* TEXT AREAS - normal, focus, hover */
 /* TEXT INPUTS - normal, focus, active, hover */
@@ -1246,20 +468,38 @@ ul.icons li .icon-large:before {
 #subtitle {
   margin-top: 0 !important;
   top: 0;
-  line-height: 0;
-}
+  line-height: 0; }
+
 nav ul {
   list-style: none;
   margin: 0;
+  margin-top: 46px;
   padding: 0;
-}
-nav ul li {
-  display: inline;
-}
-nav ul li a,
-nav ul li a:visited {
-  color: ;
-}
+  padding-bottom: 10px;
+  float: right; }
+  nav ul li {
+    font-size: 16px;
+    display: inline;
+    margin-left: 10px; }
+    nav ul li a, nav ul li a:visited {
+      color: #9da0a4;
+      text-decoration: none;
+      -o-text-shadow: 0, 1px, 1px, white;
+      -moz-text-shadow: 0, 1px, 1px, white;
+      -ms-text-shadow: 0, 1px, 1px, white;
+      -khtml-text-shadow: 0, 1px, 1px, white;
+      -webkit-text-shadow: 0, 1px, 1px, white;
+      text-shadow: 0, 1px, 1px, white;
+      padding-bottom: 10px; }
+    nav ul li a:hover {
+      color: #232527;
+      -o-text-shadow: 0, 1px, 1px, white;
+      -moz-text-shadow: 0, 1px, 1px, white;
+      -ms-text-shadow: 0, 1px, 1px, white;
+      -khtml-text-shadow: 0, 1px, 1px, white;
+      -webkit-text-shadow: 0, 1px, 1px, white;
+      text-shadow: 0, 1px, 1px, white; }
+
 /*:::: HELPER CLASSES ::::*/
 /*
  * Define your styles first. Add media queries below these helpers.
@@ -1273,16 +513,16 @@ nav ul li a:visited {
   background-color: transparent;
   background-repeat: no-repeat;
   text-align: left;
-  direction: ltr;
-}
+  direction: ltr; }
+
 .ir br {
-  display: none;
-}
+  display: none; }
+
 /* Hidden from browsers and screen readers */
 .hidden {
   display: none !important;
-  visibility: hidden;
-}
+  visibility: hidden; }
+
 /*  Hidden visibly but available to screenreaders. Same as .hidden but good for accessibility */
 .visuallyhidden {
   border: 0;
@@ -1292,78 +532,59 @@ nav ul li a:visited {
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px;
-}
+  width: 1px; }
+
 /* Extends .visually hidden to allow element to be focusable when using the keyboard */
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
   overflow: visible;
   position: static;
-  width: auto;
-}
+  width: auto; }
+
 /* Hide visually and from screenreaders, but maintain layout. Think of it as having an element match the background - looks hidden but affects other elements. Cannot be highlighted */
 .invisible {
-  visibility: hidden;
-}
+  visibility: hidden; }
+
 /* Contain floats: h5bp.com/q This is a godsend in many cases */
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .clearfix:after {
   content: "";
-  display: table;
-}
+  display: table; }
+
 .clearfix:after {
-  clear: both;
-}
+  clear: both; }
+
 .clearfix {
-  zoom: 1;
-}
+  zoom: 1; }
+
 /*:::: MEDIA QUERIES ::::*/
 /* Smaller screens */
 @media only screen and (max-width: 1023px) {
   body {
     font-size: 0.8em;
-    line-height: 1.5em;
-  }
-}
+    line-height: 1.5em; } }
 /* Mobile */
 @media handheld, only screen and (max-width: 767px) {
   body {
     font-size: 16px;
-    -webkit-text-size-adjust: none;
-  }
-  .row,
-  body,
-  .container {
+    -webkit-text-size-adjust: none; }
+
+  .row, body, .container {
     width: 100%;
     min-width: 0;
     margin-left: 0px;
     margin-right: 0px;
     padding-left: 0px;
-    padding-right: 0px;
-  }
-  .row .one,
-  .row .two,
-  .row .three,
-  .row .four,
-  .row .five,
-  .row .six,
-  .row .seven,
-  .row .eight,
-  .row .nine,
-  .row .ten,
-  .row .eleven,
-  .row .twelve {
+    padding-right: 0px; }
+
+  .row .one, .row .two, .row .three, .row .four, .row .five, .row .six, .row .seven, .row .eight, .row .nine, .row .ten, .row .eleven, .row .twelve {
     width: auto;
     float: none;
     margin-left: 0px;
     margin-right: 0px;
     padding-left: 20px;
-    padding-right: 20px;
-  }
-}
+    padding-right: 20px; } }
 /* Extra queries just in case... */
 /*@media handheld, only screen and (max-width: 767px) {
 
@@ -1387,52 +608,42 @@ nav ul li a:visited {
     color: black !important;
     text-shadow: none !important;
     filter: none !important;
-    -ms-filter: none !important;
-  }
+    -ms-filter: none !important; }
+
   /* Black prints faster: h5bp.com/s */
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+  a, a:visited {
+    text-decoration: underline; }
+
   a[href]:after {
-    content: " (" attr(href) ")";
-  }
+    content: " (" attr(href) ")"; }
+
   abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: "";
-  }
+    content: " (" attr(title) ")"; }
+
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: ""; }
+
   /* Don't show links for images, or javascript/internal links */
-  pre,
-  blockquote {
+  pre, blockquote {
     border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+    page-break-inside: avoid; }
+
   thead {
-    display: table-header-group;
-  }
+    display: table-header-group; }
+
   /* h5bp.com/t */
-  tr,
+  tr, img {
+    page-break-inside: avoid; }
+
   img {
-    page-break-inside: avoid;
-  }
-  img {
-    max-width: 100% !important;
-  }
-  @page  {
-    margin: 0.5cm;
-  }
-  p,
-  h2,
-  h3 {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+  p, h2, h3 {
     orphans: 3;
-    widows: 3;
-  }
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
+    widows: 3; }
+
+  h2, h3 {
+    page-break-after: avoid; } }
