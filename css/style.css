@@ -357,7 +357,7 @@ h1:first-child, h2:first-child, h3:first-child, h4:first-child {
   margin-top: 0; }
 
 p, pre, address, li, label {
-  font-size: 13px;
+  font-size: 16px;
   line-height: 18px;
   position: relative;
   top: 5px;
@@ -465,6 +465,10 @@ strong {
 /**************************************\
 |* THE REST OF YOUR STYLES BELOW HERE *|
 \**************************************/
+header {
+  padding-top: 20px;
+  margin-bottom: 70px; }
+
 #subtitle {
   margin-top: 0 !important;
   top: 0;
@@ -473,12 +477,12 @@ strong {
 nav ul {
   list-style: none;
   margin: 0;
-  margin-top: 46px;
+  margin-top: 44px;
   padding: 0;
   padding-bottom: 10px;
   float: right; }
   nav ul li {
-    font-size: 16px;
+    font-size: 18px;
     display: inline;
     margin-left: 10px; }
     nav ul li a, nav ul li a:visited {
@@ -499,6 +503,46 @@ nav ul {
       -khtml-text-shadow: 0, 1px, 1px, white;
       -webkit-text-shadow: 0, 1px, 1px, white;
       text-shadow: 0, 1px, 1px, white; }
+
+#main-container {
+  background: #f7f7f7;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  #main-container a {
+    color: #f15755;
+    text-decoration: none;
+    border-bottom: 1px solid #f15755;
+    font-weight: 700; }
+  #main-container a:hover {
+    color: #232527;
+    border-bottom: none; }
+  #main-container a:visited {
+    color: #9da0a4; }
+
+footer {
+  background: #232527;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  footer p {
+    color: white;
+    font-size: 13px;
+    -o-text-shadow: 0 1px 1px black;
+    -moz-text-shadow: 0 1px 1px black;
+    -ms-text-shadow: 0 1px 1px black;
+    -khtml-text-shadow: 0 1px 1px black;
+    -webkit-text-shadow: 0 1px 1px black;
+    text-shadow: 0 1px 1px black; }
+  footer ul {
+    float: right;
+    list-style: none; }
+    footer ul li {
+      display: inline;
+      margin-left: 10px; }
+      footer ul li a, footer ul li a:visited {
+        text-decoration: none;
+        font-size: 14px; }
+      footer ul li a:hover {
+        color: #fcc71f; }
 
 /*:::: HELPER CLASSES ::::*/
 /*
