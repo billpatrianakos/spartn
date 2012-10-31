@@ -2,30 +2,26 @@
 layout: default
 ---
 
-<section id="main-container" class="container blog-index">
+	<div class="eight">
 	{% assign index = true %}
 	{% for post in paginator.posts %}
 	{% assign content = post.content %}
-	<section class="row">
-		<div class="seven">
-			<article>{% include article.html %}</article>
+			<article class="post-container">{% include article.html %}</article>
 	{% endfor %}
 			<div class="pagination">
 				{% if paginator.next_page %}
 				<a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
 				{% endif %}
-				<a href="/blog/archives">Blog Archives</a>
+				<a class="centered-text" href="/blog/archives">Blog Archives</a>
 				{% if paginator.previous_page %}
 				<a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
 				{% endif %}
 			</div>
 		</div>
-		<aside class="five last">
+		<aside class="four last">
 			{% if site.blog_index_asides.size %}
 			{% include_array blog_index_asides %}
 			{% else %}
 			{% include_array default_asides %}
 			{% endif %}
 		</aside>
-	</section>
-</section>

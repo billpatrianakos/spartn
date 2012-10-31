@@ -1,0 +1,124 @@
+/*:::: TYPOGRAPHY ::::*/
+
+body                { font-size: 75%; line-height: 1.5; /*12/18*/ }
+
+h1, h2, h3, h4, h5, h6 {
+  position: relative;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	color: $black;
+	@include text-shadow(0, 1px, 1px, $white);
+}
+
+h1, h2, h3, h4 {
+  margin-top: 18px;
+}
+
+h3, h4, h5, h6 { 
+  line-height: 18px;
+}
+
+h1, h2 {
+  line-height: 36px; 
+  margin-bottom: 18px;
+}
+
+h1:first-child, h2:first-child, h3:first-child, h4:first-child {
+  margin-top: 0;
+}
+
+p, pre, address, li, label {
+  font-size: 16px;
+  line-height: 23px;
+  position: relative;
+  top: 5px;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  @include text-shadow(0, 1px, 1px, $white);
+}
+
+h6 {
+  font-size: 13px;
+  top: 5px
+}
+
+h5 {
+  font-size: 15px;
+  top: 4px;
+}
+
+h4 {
+  font-size: 18px;
+  top: 2px;
+}
+
+h3 {
+  font-size: 22px;
+  top: 1px;
+}
+
+h2 {
+  font-size: 28px;
+  top: 8px;
+}
+
+h1 {
+  font-size: 36px;
+  top: 5px;
+}
+
+a, a:visited {
+  color: $white;
+  @include text-shadow(0, 1px, 1px, $black);
+}
+
+a:focus, a:hover {
+  color: $black;
+  @include text-shadow(0, 1px, 1px, $black);
+}
+
+.secondary p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+$mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
+.mono { font-family: $mono; }
+.pullquote-right:before,
+.pullquote-left:before {
+  /* Reset metrics. */
+  padding: 0;
+  border: none;
+
+  /* Content */
+  content: attr(data-pullquote);
+
+  /* Pull out to the right, modular scale based margins. */
+  float: right;
+  width: 45%;
+  margin: .5em 0 1em 1.5em;
+
+  /* Baseline correction */
+  position: relative;
+  top: 7px;
+  font-size: 1.4em;
+  line-height: 1.45em;
+}
+
+.pullquote-left:before {
+  /* Make left pullquotes align properly. */
+  float: left;
+  margin: .5em 1.5em 1em 0;
+}
+
+/* @extend this to force long lines of continuous text to wrap */
+.force-wrap {
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
