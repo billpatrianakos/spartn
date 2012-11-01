@@ -127,6 +127,19 @@ input[type=submit]:hover, button:hover {
 header {
 	padding-top: 20px;
 	margin-bottom: 70px;
+	#title-link {
+		border-bottom: none !important;
+		color: $black !important;
+		text-decoration: none;
+	}
+	#title-link:visited {
+		border-bottom: none !important;
+		color: $black !important;
+	}
+	#title-link:hover {
+		color: $pink !important;
+		border-bottom: none;
+	}
 }
 
 #subtitle {

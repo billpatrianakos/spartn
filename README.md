@@ -37,3 +37,5 @@ Spart'n has nothing new and nothing has been left out. Everything you could do i
 # Roadmap
 
 I'm currently using Spart'n for my own blog so you can be sure this project will be updated and a more polished version should appear here in the coming weeks. I'd be happy to include pull requests and respond to any issues you may have!
+
+Spart'n is (obviously) open source and available under the BSD license. Do whatever the hell you want with it. For free. And for Freedom.
